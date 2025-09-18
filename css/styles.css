@@ -19,7 +19,7 @@
 
 body {
   font-family: 'Lato', sans-serif;
-  background-color: #bde4e6;
+  background-color: #bdcfe6;
   color: var(--dark);
   line-height: 1.6;
 }
@@ -136,10 +136,19 @@ nav.main-nav a:hover {
   color: white;
 }
 
-/* Sections */
+/* /* Sections */
 .section {
   margin: 40px 0;
+} */
+
+/* Restore vertical stack for home page sections */
+.grid {
+  display: block;  /* stack elements vertically */
 }
+.grid .card {
+  margin-bottom: 20px; /* spacing between cards */
+}
+
 
 .section h2 {
   font-family: 'Playfair Display', serif;
