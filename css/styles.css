@@ -19,11 +19,10 @@
 
 body {
   font-family: 'Lato', sans-serif;
-  background: #bde4e6;
+  background-color: #bde4e6;
   color: var(--dark);
   line-height: 1.6;
 }
-
 
 /* Container */
 .container {
