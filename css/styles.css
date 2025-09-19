@@ -198,7 +198,7 @@ nav.main-nav a:hover {
   margin-top: 40px;
 }
 
-/* Forms */
+/* /* Forms */
 form {
   max-width: 600px;
   margin: 0 auto;
@@ -221,4 +221,33 @@ input, textarea, select {
   border-radius: var(--radius);
   border: 1px solid #ddd;
   font-family: inherit;
+} */
+/* Forms */
+.form-row{ margin-bottom:14px; text-align:left }
+label{ display:block; font-weight:600; margin-bottom:6px; font-size:0.95rem }
+input[type="text"], input[type="email"], select, textarea{
+  width:100%;
+  padding:12px 14px;
+  border-radius:var(--radius);
+  border:1px solid #e2e8f0;
+  background:#fff;
+  font-family:inherit;
+}
+textarea{ min-height:140px; resize:vertical }
+input[type="file"]{ padding:6px 0 }
+
+/* Cart */
+.cart-list{ list-style:none; padding:0 }
+.cart-list li{
+  padding:10px 0;
+  border-bottom:1px dashed #e2e8f0;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+/* Responsive */
+@media(max-width:800px){
+  nav.main-nav{display:none}
+  .mobile-toggle{display:inline-block;font-size:1.4rem;background:none;border:0}
 }
