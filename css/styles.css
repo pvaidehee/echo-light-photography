@@ -33,14 +33,16 @@ body {
 }
 
 /* Header */
+
 .site-header {
-  background: white;
-  border-bottom: 1px solid #e5e7eb;
+  background: #BDCFE6;
+  border-bottom: 1px solid #aab9d6;
   box-shadow: var(--shadow);
   position: sticky;
   top: 0;
   z-index: 1000;
 }
+
 
 .header-inner {
   display: flex;
@@ -136,18 +138,24 @@ nav.main-nav a:hover {
   color: white;
 }
 
-/* /* Sections */
-.section {
-  margin: 40px 0;
-} */
+.card {
+  background: white;
+  padding: 24px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  transition: transform 0.2s;
+}
 
-/* Restore vertical stack for home page sections */
+.card:hover {
+  transform: translateY(-4px);
+}
+
 .grid {
-  display: block;  /* stack elements vertically */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
 }
-.grid .card {
-  margin-bottom: 20px; /* spacing between cards */
-}
+
 
 
 .section h2 {
