@@ -198,20 +198,29 @@ nav.main-nav a:hover {
   margin-top: 40px;
 }
 
-/* /* Forms */
+/* Forms */
+/* Forms - consistent style */
 form {
   max-width: 600px;
   margin: 0 auto;
-  background: white;
-  padding: 20px;
+  background: white;               
+  padding: 24px;
   border-radius: var(--radius);
   box-shadow: var(--shadow);
+}
+
+form h2 {
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 16px;
+  font-size: 1.6rem;
+  text-align: center;
 }
 
 label {
   display: block;
   margin-bottom: 6px;
   font-weight: 600;
+  color: var(--dark);
 }
 
 input, textarea, select {
@@ -221,20 +230,42 @@ input, textarea, select {
   border-radius: var(--radius);
   border: 1px solid #ddd;
   font-family: inherit;
-} */
-/* Forms */
-.form-row{ margin-bottom:14px; text-align:left }
-label{ display:block; font-weight:600; margin-bottom:6px; font-size:0.95rem }
-input[type="text"], input[type="email"], select, textarea{
-  width:100%;
-  padding:12px 14px;
-  border-radius:var(--radius);
-  border:1px solid #e2e8f0;
-  background:#fff;
-  font-family:inherit;
+  font-size: 1rem;
 }
-textarea{ min-height:140px; resize:vertical }
-input[type="file"]{ padding:6px 0 }
+
+textarea {
+  resize: vertical;
+  min-height: 140px;
+}
+
+input[type="submit"], button {
+  background: var(--accent);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 12px 20px;
+  border-radius: var(--radius);
+  font-weight: 600;
+  transition: background 0.2s ease;
+}
+
+input[type="submit"]:hover, button:hover {
+  background: #a1772d;
+}
+
+.footer-form {
+  max-width: 400px;
+  margin: 0 auto;
+  background: white;                
+  padding: 16px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.footer-form input[type="email"] {
+  margin-bottom: 12px;
+}
+
 
 /* Cart */
 .cart-list{ list-style:none; padding:0 }
