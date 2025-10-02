@@ -9,6 +9,17 @@ document.addEventListener('DOMContentLoaded', function(){
       if(nav) nav.style.display = (nav.style.display === 'flex') ? 'none' : 'flex';
     });
   }
+// nav toggle
+document.addEventListener('DOMContentLoaded', function () {
+  const btn = document.getElementById('nav-toggle');
+  const menu = document.getElementById('nav-menu');
+
+  btn.addEventListener('click', () => {
+    const expanded = btn.getAttribute('aria-expanded') === 'true' || false;
+    btn.setAttribute('aria-expanded', !expanded);
+    menu.classList.toggle('open');
+  });
+});
 
   // Cart functionality (localStorage)
   updateCartCount();
